@@ -3,10 +3,8 @@ pipeline{
     stages{
 	stage("Executing Java Testng Suites"){
             steps{
-		echo 'Exceuting ECHO'
-		echo date
-                sh "javac Temp.java"
-		sh "java Temp"
+		echo 'Exceuting ECHO'	
+		bat 'start cmd.exe /c d:\\testsuite.bat'
             }
         }
         
