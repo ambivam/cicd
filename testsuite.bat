@@ -1,5 +1,5 @@
 @echo off
 javac d:\cicd\Temp.java
-pause
+sleep 10
 java d:\cicd\Temp
-pause
+sleep 10
