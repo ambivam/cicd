@@ -3,7 +3,7 @@ pipeline{
     stages{
 	stage("Executing Java Testng Suites"){
             steps{
-		echo '$PWD'
+		echo 'Exceuting ECHO'
                 sh "javac Temp.java"
 		sh "java Temp"
             }
