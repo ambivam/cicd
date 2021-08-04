@@ -4,7 +4,7 @@ public class Temp
 {
     public static void main(String[] args)
     {
-        File file = new File("D:\\demo\\music.txt"); //initialize File object and passing path as argument
+        File file = new File("music.txt"); //initialize File object and passing path as argument
         boolean result;
         try
         {
