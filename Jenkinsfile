@@ -4,7 +4,7 @@ pipeline{
 	stage("Compiling Java"){
             steps{
 		echo 'Exceuting ECHO1'	
-		bat """start cmd.exe /c javac d:\\cicd\\Temp.java & java d:\\cicd\\Temp"""
+		bat 'start cmd.exe /c d:\cicd\testsuite.bat'
 		
             }
         }
