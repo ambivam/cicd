@@ -10,8 +10,7 @@ pipeline{
         }
     	stage("Executing Java"){
 	    steps{
-		#echo 'Exceuting ECHO2'			
-		#bat 'start cmd.exe /c java d:\\cicd\\Temp'
+		
 	    }
 	}
         
