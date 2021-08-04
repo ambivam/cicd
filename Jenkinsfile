@@ -10,7 +10,7 @@ pipeline{
         }
     	stage("Executing Java"){
 	    steps{
-		
+		echo 'Exceuting ECHO2'	
 	    }
 	}
         
