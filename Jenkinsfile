@@ -4,7 +4,7 @@ pipeline{
 	stage("Compiling Java"){
             steps{
 		echo 'Exceuting ECHO1'	
-		bat '''mvn clean test'''
+		bat '''mvn clean test -Dtest=SuiteGen'''
 		
             }
         }        
