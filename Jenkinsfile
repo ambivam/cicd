@@ -1,12 +1,16 @@
 pipeline{
     agent any
     stages{
-	stage("Executing Java Testng Suites"){
+	stage("Compiling Java"){
             steps{
-		echo 'Exceuting ECHO'	
-		bat 'start cmd.exe /c d:\\cicd\\testsuite.bat'
+		echo 'Exceuting ECHO1'	
+		bat '''@echo off
+			javac SuiteGen.java
+			pause
+			java SuiteGen
+			pause'''
+		
             }
-        }
-        
+        }        
     }
 }
