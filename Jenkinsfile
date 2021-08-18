@@ -5,9 +5,9 @@ pipeline{
             steps{
 		echo 'Exceuting ECHO1'	
 		bat '''@echo off
-			javac Temp.java
+			javac SuiteGen.java
 			pause
-			java Temp
+			java SuiteGen
 			pause'''
 		
             }
