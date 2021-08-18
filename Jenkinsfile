@@ -4,11 +4,7 @@ pipeline{
 	stage("Compiling Java"){
             steps{
 		echo 'Exceuting ECHO1'	
-		bat '''@echo off
-			javac SuiteGen.java
-			pause
-			java SuiteGen
-			pause'''
+		bat '''mvn clean test'''
 		
             }
         }        
